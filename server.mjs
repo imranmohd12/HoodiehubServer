@@ -1,16 +1,10 @@
 import express from "express";
 import { createConnection } from "mysql";
 import cors from "cors";
+import { CONFIG,CORSORIGIN } from "./config.mjs";
 
 
-const connection = createConnection({
-  host: "127.0.0.1",
-  user: "root",
-  password: "#HiHyderabad1234",
-  database: "hoodiehub",
-  port: 3306,
-  insecureAuth: true,
-});
+const connection = createConnection(CONFIG);
 
 connection.connect((err) => {
   if (err) {
@@ -22,7 +16,7 @@ connection.connect((err) => {
 
 const app = express();
 app.use(cors({
-  origin: 'http://localhost:1234',
+  origin: CORSORIGIN,
   optionsSuccessStatus: 200,
 }));
 
@@ -124,7 +118,6 @@ const addingImagesSizes = async (products,res)=>{
     product.sizes = JSON.parse(JSON.stringify(sizes));
     data.push(product);
   }
-  console.log(data);
   res.send(data);
 }
 
