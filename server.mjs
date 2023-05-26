@@ -2,8 +2,11 @@ import express from "express";
 import cors from "cors";
 import {CORSORIGIN } from "./config.mjs";
 import mysql from 'mysql2';
+import dotenv from 'dotenv';
 
-const connection = mysql.createConnection(`mysql://j02xsyd1lei819836g20:pscale_pw_IfDOOAtYiRBV2ksotAB9hpFHCWANdt2jTk4mhv8ERMz@aws.connect.psdb.cloud/hoodiehub?ssl={"rejectUnauthorized":true}`)
+dotenv.config();
+
+const connection = mysql.createConnection(process.env.DATABASE_URL)
 
 connection.connect((err) => {
   if (err) {
