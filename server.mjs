@@ -1,10 +1,12 @@
 import express from "express";
-import { createConnection } from "mysql";
 import cors from "cors";
-import { CONFIG,CORSORIGIN } from "./config.mjs";
+import {CORSORIGIN } from "./config.mjs";
+import dotenv from "dotenv";
+import mysql from 'mysql2';
 
 
-const connection = createConnection(CONFIG);
+dotenv.config();
+const connection = mysql.createConnection(process.env.DATABASE_URL)
 
 connection.connect((err) => {
   if (err) {

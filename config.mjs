@@ -6,14 +6,4 @@
 //     port: 3306,
 //     insecureAuth: true,
 // }
-
-export const CONFIG = {
-    host: "sql209.epizy.com",
-    user: "epiz_34285963",
-    password: "#l2Qn0GkgJX",
-    database: "epiz_34285963_hoodiehub",
-    port: 3306,
-    insecureAuth: true,
-}
-
-export const CORSORIGIN = 'http://localhost:1234';
+export const CORSORIGIN = 'http://localhost:52082';
