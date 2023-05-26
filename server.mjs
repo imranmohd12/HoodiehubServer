@@ -3,7 +3,7 @@ import cors from "cors";
 import {CORSORIGIN } from "./config.mjs";
 import mysql from 'mysql2';
 
-const connection = mysql.createConnection(`mysql://wscqhmysdvb8w5blp2lb:pscale_pw_G74R4YXP0icYjx0Uc9CPplp229Ipbn6rIXvgqrs2zd0@aws.connect.psdb.cloud/hoodiehub?ssl={"rejectUnauthorized":true}`)
+const connection = mysql.createConnection(`mysql://j02xsyd1lei819836g20:pscale_pw_IfDOOAtYiRBV2ksotAB9hpFHCWANdt2jTk4mhv8ERMz@aws.connect.psdb.cloud/hoodiehub?ssl={"rejectUnauthorized":true}`)
 
 connection.connect((err) => {
   if (err) {
