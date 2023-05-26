@@ -6,4 +6,4 @@
 //     port: 3306,
 //     insecureAuth: true,
 // }
-export const CORSORIGIN = 'http://localhost:52082';
+export const CORSORIGIN = 'https://hoodiehub-imranmohd12.vercel.app';
