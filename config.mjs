@@ -6,4 +6,11 @@
 //     port: 3306,
 //     insecureAuth: true,
 // }
-export const CORSORIGIN = ['https://hoodiehub-imranmohd12.vercel.app','https://hoodiehub-git-master-imranmohd12.vercel.app','https://hoodiehub.vercel.app'];
+export const CORSORIGIN = [
+  'https://hoodiehub-imranmohd12.vercel.app',
+  'https://hoodiehub-git-master-imranmohd12.vercel.app',
+  'https://hoodiehub.vercel.app',
+  'https://hoodiehub-xvxw.vercel.app/',
+  'https://hoodiehub-xvxw-git-master-imranmohd12.vercel.app/',
+  'https://hoodiehub-xvxw-bgraftkaa-imranmohd12.vercel.app/'
+];
